@@ -147,6 +147,9 @@ def order():
     if choice == "report":
         report()
         order()
+    
+    elif choice == "off":
+        stop = True
 
     elif choice == 'espresso' or choice == 'latte' or choice == 'cappuccino':
         print(f"{choice} price: ${MENU[choice]['cost']:.2f}")
